@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#main{
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.container:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.navbar{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.navbar h1{
+    cursor: pointer;
+    font-size: 26px;
+    transition: transform 0.5s;
+    text-transform: uppercase;
+}
+.navbar h1:hover{
+    color: red;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    transition: transform 0.5s;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 1px solid white;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+
+/*---Text About Me---*/
+
+
+.text-am{
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;      
+    align-items:center;
+    height: 100vh;
+    width: 100%;
+    text-align:center;
+    position:absolute;
+}
+.text-am h1{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.text-am h1:hover{
+    color: red;
+}
+.text-am h3{
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.text-am p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.text-am span{
+    color: red;
+}
+
+/*--- Responsive ---*/
+
+@media only screen and (max-width: 620px){
+    .navbar{
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    .navbar h1{
+        margin-bottom: 14px;
+    }
+    .navbar ul li a{
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .text-am{
+        margin-top: auto;
+    }
+    .text-am h1{
+        font-size: 24px;
+    }
+    .text-am h3{
+        font-size: 18px;
+    }
+    .text-am p{
+        font-size: 14px;
+    }
+}
