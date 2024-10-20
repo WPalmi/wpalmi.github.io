@@ -114,7 +114,7 @@ nav ul li a:hover{
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 600px){
     .content{
         text-align: center;
     }    
@@ -137,5 +137,25 @@ nav ul li a:hover{
     .content p{
         font-size: 17px;
         color: #fff;
+    }
+
+    nav .logo{
+        width: 140px;
+    }
+    
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    nav ul li a:hover{
+        background-color: black;
     }
 }
