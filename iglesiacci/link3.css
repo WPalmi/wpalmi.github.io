@@ -1,0 +1,47 @@
+.sub_header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(assets/pexels-brett-sayles-12044265.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--white);
+}
+
+.sub_header h1{
+    margin-top: 80px;
+}
+
+.aboutus{
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.abcolumn{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.abcolumn img{
+    width: 100%;
+}
+
+.abcolumn h1{
+    padding-top: 0;
+}
+
+.abcolumn p{
+    padding: 15px 0 25px;
+}
+
+.redbtn{
+    border: 1px solid var(--red);
+    background: transparent;
+    color: var(--red);
+}
+
+.redbtn:hover{
+    color: var(--white);
+}
